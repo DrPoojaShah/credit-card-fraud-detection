@@ -14,6 +14,17 @@ This project develops a complete fraud detection pipeline that combines data pre
 
 ---
 
+## ⭐ Key Highlights
+
+- Developed an end-to-end machine learning pipeline for credit card fraud detection using multiple classification algorithms.
+- Compared Logistic Regression, Random Forest, Random Forest with SMOTE, and XGBoost.
+- Performed extensive feature engineering to improve fraud detection performance.
+- Addressed severe class imbalance using SMOTE and threshold optimization.
+- Evaluated models using Accuracy, Precision, Recall, F1-score, PR-AUC, ROC-AUC, and business cost metrics.
+- Implemented a business-aware amount-tiered decision strategy for practical fraud detection.
+
+---
+
 # 🎯 Objectives
 
 - Detect fraudulent credit card transactions with high recall.
@@ -242,6 +253,24 @@ Compares precision, recall, F1-score, and PR-AUC across the baseline models, ens
 
 ---
 
+
+## 📊 Model Performance Summary
+
+| Model | Accuracy | Precision | Recall | F1 Score | PR-AUC | ROC-AUC |
+|:------|---------:|----------:|--------:|---------:|-------:|--------:|
+| Logistic Regression | 0.9445 | 0.0574 | 0.8676 | 0.1077 | 0.2391 | 0.9625 |
+| Random Forest | 0.9854 | 0.1950 | 0.8928 | 0.3201 | 0.4708 | 0.9886 |
+| Random Forest + SMOTE | 0.7712 | 0.0133 | 0.7963 | 0.0262 | 0.0739 | 0.8623 |
+| XGBoost | 0.9826 | 0.1643 | 0.8587 | 0.2758 | 0.5351 | 0.9884 |
+| **XGBoost + Amount-Tiered** | **0.9955** | **0.4476** | **0.7310** | **0.5552** | **0.5351** | **0.9884** |
+
+
+> **Key Observation:** The XGBoost model with an amount-tiered threshold achieved the highest precision (44.76%), F1-score (55.52%), and overall accuracy (99.55%), demonstrating that business-aware threshold optimization can significantly improve fraud detection performance while reducing false positives.
+
+
+---
+
+
 # 💼 Technologies Used
 
 ### Programming Language
@@ -303,25 +332,37 @@ credit-card-fraud-detection/
 
 ---
 
-# 🚀 How to Run
+## 🚀 How to Run
 
-1. Clone the repository.
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/DrPoojaShah/credit-card-fraud-detection.git
 ```
 
-2. Install the required packages.
+2. Install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Download the dataset from Kaggle.
+3. Run the Python script:
 
-4. Place `fraudTrain.csv` and `fraudTest.csv` inside the `data/` folder.
+```bash
+python credit-card-fraud-detection.py
+```
 
-5. Run the notebook located in the `notebooks/` directory.
+Or open the Jupyter notebook to explore the complete workflow.
+
+---
+
+## 📈 Project Outcomes
+
+- Successfully identified fraudulent credit card transactions using machine learning.
+- Compared multiple classification models on an imbalanced dataset.
+- Demonstrated improved fraud detection using ensemble learning and threshold optimization.
+- Provided business-oriented insights through cost-sensitive evaluation and transaction-based decision strategies.
+
 
 ---
 
