@@ -204,20 +204,20 @@ Illustrates the classification performance of the final XGBoost model, showing t
 
 ### Precision–Recall Curve
 
-Compares precision–recall trade-offs across all evaluated models.
+Compares the precision–recall trade-off across all evaluated models. This metric is especially informative for highly imbalanced fraud detection problems.
 
 <p align="center">
-<img src="images/precision_recall_curve.png" width="700">
+  <img src="images/precision_recall_curve.png" width="850">
 </p>
 
 ---
 
 ### ROC Curve
 
-Shows the true positive rate versus false positive rate for each model.
+Shows the Receiver Operating Characteristic (ROC) curves for all evaluated models, illustrating the trade-off between the true positive rate and false positive rate.
 
 <p align="center">
-<img src="images/roc_curve.png" width="700">
+  <img src="images/roc_curve.png" width="850">
 </p>
 
 ---
