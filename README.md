@@ -55,6 +55,22 @@ This project develops a complete fraud detection pipeline that combines data pre
 - Implemented a business-aware amount-tiered decision strategy for practical fraud detection.
 
 ---
+## 💡 Skills Demonstrated
+
+This project demonstrates practical machine learning, data analytics, and business-oriented decision-making skills through the development of an end-to-end fraud detection pipeline.
+
+| Category | Skills & Techniques |
+|----------|---------------------|
+| **Programming** | Python, Pandas, NumPy |
+| **Machine Learning** | Logistic Regression, Random Forest, Random Forest + SMOTE, XGBoost |
+| **Feature Engineering** | Transaction Amount, Merchant Risk, Behavioral Features, Time-Based Features |
+| **Imbalanced Learning** | SMOTE, Threshold Optimization, Cost-Sensitive Learning |
+| **Model Evaluation** | Accuracy, Precision, Recall, F1-Score, PR-AUC, ROC-AUC, Confusion Matrix |
+| **Business Analytics** | Cost-Aware Decision Making, Amount-Tiered Threshold Strategy, Financial Cost Analysis |
+| **Visualization** | Matplotlib, Feature Importance, ROC Curve, Precision–Recall Curve, Model Comparison Charts |
+| **Tools & Libraries** | Scikit-Learn, XGBoost, Matplotlib, Jupyter Notebook |
+
+---
 
 # 🎯 Objectives
 
@@ -91,31 +107,38 @@ Binary Classification
 
 ---
 
-# 🔄 Project Workflow
+## 🔄 Project Workflow
 
 ```text
-Raw Data
-    │
-    ▼
-Data Cleaning
-    │
-    ▼
-Exploratory Data Analysis
-    │
-    ▼
-Feature Engineering
-    │
-    ▼
-Machine Learning Models
-    │
-    ▼
-Model Evaluation
-    │
-    ▼
-Business Cost Analysis
-    │
-    ▼
-Fraud Explanation
+                 📂 Raw Data
+                      │
+                      ▼
+             🧹 Data Cleaning
+                      │
+                      ▼
+      📊 Exploratory Data Analysis
+                      │
+                      ▼
+          ⚙️ Feature Engineering
+                      │
+                      ▼
+      🤖 Machine Learning Models
+      ├── Logistic Regression
+      ├── Random Forest
+      ├── Random Forest + SMOTE
+      └── XGBoost
+                      │
+                      ▼
+          📈 Model Evaluation
+      Accuracy • Precision • Recall
+      F1 • PR-AUC • ROC-AUC
+                      │
+                      ▼
+      💰 Business Cost Analysis
+      Threshold Optimization
+                      │
+                      ▼
+      🛡️ Fraud Decision & Explanation
 ```
 
 ---
@@ -192,18 +215,6 @@ The models were evaluated using the following performance metrics:
 
 ---
 
-# ⭐ Project Highlights
-
-- Built an end-to-end fraud detection pipeline.
-- Engineered more than 20 predictive features.
-- Compared four machine learning models.
-- Addressed severe class imbalance using SMOTE.
-- Applied cost-aware threshold optimization.
-- Implemented rule-based fraud explanations.
-- Evaluated models using both predictive performance and business impact.
-
----
-
 # 💰 Cost-Aware Decision Making
 
 Instead of selecting a model solely based on classification accuracy, this project incorporates business considerations into model evaluation.
@@ -231,8 +242,6 @@ The dataset is highly imbalanced, with only 7,506 fraudulent transactions compar
 </p>
 
 ---
-
-### Confusion Matrix
 
 ### Confusion Matrix
 
@@ -298,93 +307,98 @@ Compares precision, recall, F1-score, and PR-AUC across the baseline models, ens
 
 > **Key Observation:** The XGBoost model with an amount-tiered threshold achieved the highest precision (44.76%), F1-score (55.52%), and overall accuracy (99.55%), demonstrating that business-aware threshold optimization can significantly improve fraud detection performance while reducing false positives.
 
-
 ---
 
+## 💼 Technologies Used
 
-# 💼 Technologies Used
-
-### Programming Language
-
-- Python
-
-### Machine Learning
-
-- Scikit-learn
-- XGBoost
-- Imbalanced-Learn
-
-### Data Analysis
-
-- Pandas
-- NumPy
-
-### Data Visualization
-
-- Matplotlib
-- Seaborn
-
-### Development Environment
-
-- Jupyter Notebook
-- Google Colab
-
+| Category | Technologies |
+|----------|--------------|
+| **Programming Language** | Python |
+| **Machine Learning** | Scikit-Learn, XGBoost, Imbalanced-Learn (SMOTE) |
+| **Data Analysis** | Pandas, NumPy |
+| **Data Visualization** | Matplotlib, Seaborn |
+| **Development Environment** | Jupyter Notebook, Google Colab |
+| **Version Control** | Git, GitHub |
 ---
 
-# 📁 Repository Structure
+## 📁 Repository Structure
 
 ```text
 credit-card-fraud-detection/
 │
 ├── README.md
+├── LICENSE
 ├── requirements.txt
 ├── .gitignore
-│
-├── notebooks/
-│   └── credit_card_fraud_detection.ipynb
-│
-├── src/
-│   └── credit_card_fraud_detection.py
-│
-├── images/
-│   ├── class_distribution.png
-│   ├── confusion_matrix.png
-│   ├── precision_recall_curve.png
-│   ├── roc_curve.png
-│   ├── feature_importance.png
-│   └── model_comparison.png
-│
-├── reports/
-│   └── Final_Project_Report.pdf
-│
-└── data/
-    └── README.md
+├── credit_card_fraud_detection.ipynb
+├── credit_card_fraud_detection.py
+└── images/
+    ├── class_distribution.png
+    ├── confusion_matrix.png
+    ├── feature_importance.png
+    ├── model_comparisonn.png
+    ├── precision_recall_curve.png
+    └── roc_curve.png
 ```
+
+---
+## 💼 Business Impact
+
+Credit card fraud causes significant financial losses for financial institutions every year. While achieving high prediction accuracy is important, real-world fraud detection systems must also balance the cost of false positives (blocking legitimate customers) and false negatives (missing fraudulent transactions).
+
+This project extends traditional machine learning by incorporating **cost-aware decision making** through threshold optimization and an amount-tiered classification strategy. Instead of relying solely on default probability thresholds, the proposed approach adjusts fraud detection decisions based on transaction value, helping reduce unnecessary investigations while improving fraud detection for high-risk transactions.
+
+### Key Business Contributions
+
+- 💰 Reduces financial loss by prioritizing high-value fraudulent transactions.
+- ⚖️ Balances fraud detection performance with customer experience.
+- 📊 Compares multiple machine learning models using both statistical and business-oriented evaluation metrics.
+- 🎯 Demonstrates how threshold optimization can improve real-world decision making beyond standard classification metrics.
+- 📈 Provides an interpretable and practical framework that can support fraud analysts in financial institutions.
 
 ---
 
 ## 🚀 How to Run
 
-1. Clone the repository:
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/DrPoojaShah/credit-card-fraud-detection.git
+cd credit-card-fraud-detection
 ```
 
-2. Install the required packages:
+### 2. Install the required dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the Python script:
+### 3. Run the project
+
+#### Option A: Jupyter Notebook (Recommended)
 
 ```bash
-python credit-card-fraud-detection.py
+jupyter notebook credit_card_fraud_detection.ipynb
 ```
 
-Or open the Jupyter notebook to explore the complete workflow.
+#### Option B: Python Script
 
+```bash
+python credit_card_fraud_detection.py
+```
+
+### 4. Project Outputs
+
+The project generates:
+
+- 📊 Class Distribution
+- 📉 Confusion Matrix
+- 📈 Precision–Recall Curve
+- 📈 ROC Curve
+- 📊 Feature Importance
+- 📊 Model Performance Comparison
+- 💰 Business Cost Analysis
+- 🛡️ Fraud Detection Results
 ---
 
 ## 📈 Project Outcomes
@@ -407,6 +421,21 @@ Potential future enhancements include:
 - Explainable AI using SHAP
 - Interactive dashboard using Streamlit
 - REST API deployment using FastAPI
+
+---
+
+## 📚 References
+
+This project was developed using the following open-source libraries and official documentation:
+
+- Scikit-Learn: https://scikit-learn.org/stable/
+- XGBoost: https://xgboost.readthedocs.io/
+- imbalanced-learn (SMOTE): https://imbalanced-learn.org/stable/
+- Pandas: https://pandas.pydata.org/docs/
+- NumPy: https://numpy.org/doc/
+- Matplotlib: https://matplotlib.org/stable/
+
+The project is intended for educational and research purposes.
 
 ---
 
