@@ -232,18 +232,14 @@ Highlights the ten most influential features used by the final XGBoost model to 
 
 ---
 
-### Model Performance Comparison
+### 📈  Model Performance Comparison
 
-## 📈 Model Performance Comparison
+Compares precision, recall, F1-score, and PR-AUC across the baseline models, ensemble models, and the business-aware amount-tiered XGBoost strategy.
 
-*The table below will be automatically updated after running the notebook.*
+<p align="center">
+  <img src="images/model_comparison.png" width="850">
+</p>
 
-| Model | Accuracy | Precision | Recall | F1 Score |
-|--------|---------:|----------:|-------:|---------:|
-| Logistic Regression | | | | |
-| Random Forest | | | | |
-| Random Forest + SMOTE | | | | |
-| XGBoost | | | | |
 ---
 
 # 💼 Technologies Used
