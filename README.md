@@ -237,7 +237,7 @@ Highlights the ten most influential features used by the final XGBoost model to 
 Compares precision, recall, F1-score, and PR-AUC across the baseline models, ensemble models, and the business-aware amount-tiered XGBoost strategy.
 
 <p align="center">
-  <img src="images/model_comparison.png" width="850">
+  <img src="images/model_comparisonn.png" width="850">
 </p>
 
 ---
