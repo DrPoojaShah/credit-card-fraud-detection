@@ -192,10 +192,12 @@ The dataset is highly imbalanced, with only 7,506 fraudulent transactions compar
 
 ### Confusion Matrix
 
-Illustrates the classification performance of the final XGBoost model.
+### Confusion Matrix
+
+Illustrates the classification performance of the final XGBoost model, showing the number of correctly and incorrectly classified legitimate and fraudulent transactions.
 
 <p align="center">
-<img src="images/confusion_matrix.png" width="700">
+  <img src="images/confusion_matrix.png" width="850">
 </p>
 
 ---
