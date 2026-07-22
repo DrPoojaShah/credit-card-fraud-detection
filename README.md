@@ -1,68 +1,85 @@
 # 💳 Cost-Aware Credit Card Fraud Detection Using Machine Learning
 
-## Authors
-- **Dr. Pooja Shah**
-
----
+**Author:** Dr. Pooja Shah
 
 ## 📌 Project Overview
 
-Credit card fraud detection is a highly imbalanced classification problem because fraudulent transactions represent less than 1% of all transactions. This project develops a cost-aware fraud detection system using machine learning and advanced feature engineering techniques to accurately identify fraudulent transactions while minimizing business loss.
+Credit card fraud causes billions of dollars in financial losses every year. Detecting fraudulent transactions is challenging because fraud cases represent only a very small percentage of all transactions.
+
+This project develops a cost-aware fraud detection system using machine learning techniques. The workflow combines feature engineering, class imbalance handling, model comparison, threshold optimization, and business-cost analysis to identify fraudulent transactions while minimizing financial loss.
 
 ---
 
 ## 🎯 Objectives
 
-- Detect fraudulent credit card transactions.
-- Handle severe class imbalance.
+- Detect fraudulent credit card transactions with high recall.
 - Compare multiple machine learning models.
-- Reduce business cost caused by fraud.
-- Improve model interpretability using rule-based explanations.
+- Handle severe class imbalance.
+- Engineer behavioral, temporal, geographic, and merchant-risk features.
+- Evaluate models using both statistical metrics and business cost.
+- Provide interpretable fraud explanations.
 
 ---
 
 ## 📊 Dataset
 
-**Source:** Kaggle Credit Card Fraud Detection Dataset
+- Source: Kaggle Credit Card Fraud Dataset
+- Training data: `fraudTrain.csv`
+- Testing data: `fraudTest.csv`
+- Highly imbalanced binary classification problem.
 
-- Training Transactions: **1,296,675**
-- Testing Transactions: **555,719**
-- Fraud Rate: **0.58%**
+---
 
-Dataset Link:
-https://www.kaggle.com/datasets/kartik2112/fraud-detection
+## 🔄 Project Workflow
+
+```
+Raw Data
+      ↓
+Data Cleaning
+      ↓
+Exploratory Data Analysis
+      ↓
+Feature Engineering
+      ↓
+Model Training
+      ↓
+Model Evaluation
+      ↓
+Business Cost Analysis
+      ↓
+Fraud Explanation
+```
 
 ---
 
 ## 🛠 Feature Engineering
 
-The project includes:
+This project creates several feature groups:
 
 - Transaction amount features
-- Temporal features (hour, weekday, weekend)
+- Temporal features
 - Customer age
-- Geographical distance
+- Home-to-merchant distance
 - Sequential transaction behavior
 - Merchant risk
 - Category risk
 - Impossible travel detection
-- Merchant text-based features
-- Customer transaction history
+- Merchant text-based risk indicators
 
 ---
 
 ## 🤖 Machine Learning Models
 
+The following models were implemented and compared:
+
 - Logistic Regression
 - Random Forest
 - Random Forest + SMOTE
-- XGBoost
-- XGBoost + Rule-Based Threshold
-- XGBoost + Bayes Minimum Risk Threshold
+- XGBoost (Final Selected Model)
 
 ---
 
-## 📈 Evaluation Metrics
+## 📈 Model Evaluation
 
 Models were evaluated using:
 
@@ -70,45 +87,82 @@ Models were evaluated using:
 - Precision
 - Recall
 - F1-score
-- PR-AUC
 - ROC-AUC
+- PR-AUC
+- Confusion Matrix
 - Business Cost
 
 ---
 
-## 🏆 Best Model
+## 💰 Cost-Aware Decision Making
 
-The XGBoost model achieved the best overall performance by providing high fraud detection capability while minimizing business cost.
+Instead of relying only on classification accuracy, this project estimates business impact using:
+
+- False Positive Cost
+- False Negative Cost
+- Rule-based thresholds
+- BMR-inspired dynamic thresholds
+
+This approach makes the model more practical for real-world fraud detection.
 
 ---
 
-## 💻 Technologies Used
+## 📷 Results
+
+*(We'll insert figures here in the next step.)*
+
+- Class Distribution
+- Confusion Matrix
+- Precision–Recall Curve
+- ROC Curve
+- XGBoost Feature Importance
+- Model Comparison
+
+---
+
+## 💼 Technologies Used
 
 - Python
 - Pandas
 - NumPy
 - Scikit-learn
 - XGBoost
+- Imbalanced-Learn
 - Matplotlib
 - Seaborn
-- Google Colab
+- Jupyter Notebook
 
 ---
 
-## 📁 Repository Contents
+## 🚀 Repository Structure
 
-- credit-card-fraud-detection.py
-- README.md
+```
+credit-card-fraud-detection/
+│
+├── notebooks/
+├── src/
+├── images/
+├── reports/
+├── data/
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
 ---
 
-## 📌 Future Improvements
+## 🔮 Future Improvements
 
-- Deploy as a web application
-- Add SHAP explainability
+Possible future enhancements include:
+
+- Deep learning models
+- Graph Neural Networks
 - Real-time fraud detection
-- Deep learning implementation
+- Explainable AI (SHAP/LIME)
+- Model deployment using FastAPI or Streamlit
 
 ---
 
-⭐ If you found this project useful, feel free to star this repository.
+## 📄 License
+
+This project was developed for educational and research purposes.
