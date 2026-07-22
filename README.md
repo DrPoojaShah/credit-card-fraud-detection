@@ -1,8 +1,39 @@
-# 💳 Cost-Aware Credit Card Fraud Detection Using Machine Learning
+<h1 align="center">
+💳 Cost-Aware Credit Card Fraud Detection Using Machine Learning
+</h1>
+
+<p align="center">
+
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange)
+![XGBoost](https://img.shields.io/badge/XGBoost-Gradient%20Boosting-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
+</p>
+
+---
 
 **Author:** Dr. Pooja Shah
 
 An end-to-end machine learning project that detects fraudulent credit card transactions using advanced feature engineering, cost-aware decision making, and interpretable fraud analysis. The project compares multiple machine learning models and evaluates their effectiveness using both traditional classification metrics and business-oriented cost analysis.
+
+---
+
+## 📑 Table of Contents
+
+- [📌 Project Overview](#-project-overview)
+- [⭐ Key Highlights](#-key-highlights)
+- [📂 Dataset](#-dataset)
+- [⚙️ Workflow](#️-workflow)
+- [🛠️ Feature Engineering](#️-feature-engineering)
+- [🤖 Machine Learning Models](#-machine-learning-models)
+- [📊 Results & Visualizations](#-results--visualizations)
+- [📈 Model Performance Summary](#-model-performance-summary)
+- [🚀 How to Run](#-how-to-run)
+- [📈 Project Outcomes](#-project-outcomes)
+- [🔮 Future Improvements](#-future-improvements)
+- [📜 License](#-license)
 
 ---
 
