@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Dataset
+fraudTrain.csv
+fraudTest.csv
+
+# Virtual environments
+venv/
+.env
+
+# VS Code
+.vscode/
