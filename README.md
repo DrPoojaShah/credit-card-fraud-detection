@@ -182,10 +182,10 @@ This makes the fraud detection system more suitable for real-world financial app
 
 ### Class Distribution
 
-Shows the severe class imbalance between legitimate and fraudulent transactions.
+The dataset is highly imbalanced, with only 7,506 fraudulent transactions compared to 1,289,169 legitimate transactions. This imbalance motivates the use of techniques such as SMOTE, threshold optimization, and cost-sensitive evaluation.
 
 <p align="center">
-<img src="images/class_distribution.png" width="700">
+    <img src="images/class_distribution.png" width="850">
 </p>
 
 ---
