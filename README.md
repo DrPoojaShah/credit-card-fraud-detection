@@ -224,10 +224,10 @@ Shows the Receiver Operating Characteristic (ROC) curves for all evaluated model
 
 ### XGBoost Feature Importance
 
-Highlights the most influential features used by the final model.
+Highlights the ten most influential features used by the final XGBoost model to identify fraudulent transactions.
 
 <p align="center">
-<img src="images/feature_importance.png" width="700">
+  <img src="images/feature_importance.png" width="850">
 </p>
 
 ---
